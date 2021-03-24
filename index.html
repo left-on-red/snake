@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SNAKE</title>
+    <style>
+        body {
+            background-color: #111111;
+        }
+
+        div#container {
+            width: 100%;
+            text-align: center;
+        }
+
+        canvas#canvas {
+            display: inline;
+        }
+
+        h1, h2, p {
+            color: #f1f1f1;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: inline;
+        }
+
+        p {
+            margin-left: 10px;
+        }
+
+        #die {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div id="scores">
+            <h1>score:<p id="score"></p></h1>
+            <br>
+            <h2>best:<p id="high"></p></h2>
+        </div>
+        <div>
+            <h1 id="die">press space to try again</h1>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <script src="Playfield.js"></script>
+    <script src="Snake.js"></script>
+    <script src="main.js"></script>
+</footer>
+</html>
